@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/DerYeger/page-views/compare/v1.0.0...v1.0.1) (2022-07-25)
+
+
+### Bug Fixes
+
+* **package:** use scoped name ([854a865](https://github.com/DerYeger/page-views/commit/854a865c747f42a36e44cc30bb9c2830cb8d2a1e))
+
 # 1.0.0 (2022-07-25)
 
 
