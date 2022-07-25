@@ -14,7 +14,6 @@ describe('page-views', () => {
       PageViews.autoSubmitViews({
         backendUrl: testBackend,
         filter: filterSpy,
-        trackPopState: true,
       })
       expect(filterSpy).toBeCalledWith('localhost:3000')
     })
@@ -27,7 +26,6 @@ describe('page-views', () => {
         {
           backendUrl: testBackend,
           filter: filterSpy,
-          trackPopState: true,
         },
         testPage
       )
@@ -45,7 +43,6 @@ describe('page-views', () => {
         {
           backendUrl: testBackend,
           filter: () => true,
-          trackPopState: true,
         },
         testPage
       )
