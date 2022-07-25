@@ -14,8 +14,8 @@
   <a href="https://github.com/DerYeger/page-views/actions/workflows/ci.yml">
     <img alt="CI" src="https://img.shields.io/github/workflow/status/DerYeger/page-views/CI?label=ci&logo=github&color=#4DC71F">
   </a>
-  <a href="https://www.npmjs.com/package/page-views">
-    <img alt="NPM" src="https://img.shields.io/npm/v/page-views?logo=npm">
+  <a href="https://www.npmjs.com/package/@yeger/page-views">
+    <img alt="NPM" src="https://img.shields.io/npm/v/@yeger/page-views?logo=npm">
   </a>
   <a href="https://codecov.io/gh/DerYeger/page-views">
     <img alt="Coverage" src="https://codecov.io/gh/DerYeger/page-views/branch/master/graph/badge.svg?token=p35W6u2noe">
@@ -35,16 +35,16 @@
 
 ```bash
 # yarn
-$ yarn add page-views
+$ yarn add @yeger/page-views
 
 # npm
-$ npm install page-views
+$ npm install @yeger/page-views
 ```
 
 ## Usage
 
 ```typescript
-import PageViews from 'page-views'
+import PageViews from '@yeger/page-views'
 
 // Manually submit a view of the current page
 await PageViews.submitView()

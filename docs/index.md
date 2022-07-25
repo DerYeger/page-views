@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: page-views
+  name: '@yeger/page-views'
   text: ''
   tagline: ''
   actions:
