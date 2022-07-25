@@ -30,7 +30,7 @@
     <img alt="LGTM Grade" src="https://img.shields.io/lgtm/grade/javascript/github/DerYeger/page-views?logo=lgtm">
   </a>
   <a href="https://opensource.org/licenses/MIT">
-    <img alt="MIT" src="https://img.shields.io/npm/l/page-views?color=%234DC71F">
+    <img alt="MIT" src="https://img.shields.io/npm/l/@yeger/page-views?color=%234DC71F">
   </a>
   <a href="https://bundlephobia.com/package/@yeger/page-views">
     <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/@yeger/page-views">

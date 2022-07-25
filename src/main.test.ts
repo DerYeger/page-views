@@ -9,18 +9,40 @@ const testBackend = 'https://localhost:8080'
 
 describe('page-views', () => {
   describe('autoSubmitViews', () => {
-    it('submits immediately', async () => {
-      const filterSpy = vi.fn().mockImplementation((_: string) => false)
+    it('submits', async () => {
+      global.fetch = vi.fn()
       PageViews.autoSubmitViews({
         backendUrl: testBackend,
-        filter: filterSpy,
       })
-      expect(filterSpy).toBeCalledWith('localhost:3000')
+      expect(global.fetch).toBeCalledWith(`${testBackend}/localhost:3000`, {
+        method: 'POST',
+      })
+
+      history.pushState({}, '', '/test')
+      expect(global.fetch).toBeCalledWith(
+        `${testBackend}/localhost:3000/test`,
+        {
+          method: 'POST',
+        }
+      )
     })
   })
 
   describe('submitView', () => {
     it('submits immediately', async () => {
+      global.fetch = vi.fn()
+      await PageViews.submitView(
+        {
+          backendUrl: testBackend,
+        },
+        testPage
+      )
+      expect(global.fetch).toBeCalledWith(`${testBackend}/${testPage}`, {
+        method: 'POST',
+      })
+    })
+
+    it('can be filtered', async () => {
       const filterSpy = vi.fn().mockImplementation((_: string) => false)
       await PageViews.submitView(
         {
