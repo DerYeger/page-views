@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/DerYeger/page-views/compare/v1.1.0...v1.2.0) (2022-07-25)
+
+
+### Features
+
+* **package:** add SSR support ([a526024](https://github.com/DerYeger/page-views/commit/a5260243201e44cb1ae120b470a38f595b2ad654))
+
 # [1.1.0](https://github.com/DerYeger/page-views/compare/v1.0.1...v1.1.0) (2022-07-25)
 
 
