@@ -16,5 +16,6 @@
     "exactOptionalPropertyTypes": true,
     "skipLibCheck": true,
     "jsx": "preserve"
-  }
+  },
+  "exclude": ["./**/*.tsx"]
 }

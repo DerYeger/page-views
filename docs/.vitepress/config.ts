@@ -2,24 +2,24 @@ import { defineConfig } from 'vitepress'
 
 import Package from '../../package.json'
 
+// TODO
 // const ogImage = `${Package.homepage}/logo.png`
 
 export default defineConfig({
   // site config
   lang: 'en-US',
   title: Package.name,
-  // TODO
-  // description: Package.description,
+  description: Package.description,
 
   head: [
     ['meta', { property: 'og:title', content: Package.name }],
-    // [
-    //   'meta',
-    //   {
-    //     property: 'og:description',
-    //     content: Package.description,
-    //   },
-    // ],
+    [
+      'meta',
+      {
+        property: 'og:description',
+        content: Package.description,
+      },
+    ],
     ['meta', { property: 'og:url', content: Package.homepage }],
     // [
     //   'meta',
@@ -29,13 +29,13 @@ export default defineConfig({
     //   },
     // ],
     ['meta', { name: 'twitter:title', content: Package.name }],
-    // [
-    //   'meta',
-    //   {
-    //     name: 'twitter:description',
-    //     content: Package.description,
-    //   },
-    // ],
+    [
+      'meta',
+      {
+        name: 'twitter:description',
+        content: Package.description,
+      },
+    ],
     // [
     //   'meta',
     //   {
@@ -47,14 +47,6 @@ export default defineConfig({
     // ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
   ],
 
-  markdown: {
-    theme: {
-      light: 'vitesse-light',
-      dark: 'vitesse-dark',
-    },
-  },
-
-  // theme and its config
   themeConfig: {
     editLink: {
       pattern: 'https://github.com/DerYeger/page-views/tree/master/docs/:path',

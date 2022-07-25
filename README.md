@@ -32,8 +32,8 @@
   <a href="https://opensource.org/licenses/MIT">
     <img alt="MIT" src="https://img.shields.io/npm/l/page-views?color=%234DC71F">
   </a>
-  <a href="https://bundlephobia.com/package/page-views">
-    <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/page-views">
+  <a href="https://bundlephobia.com/package/@yeger/page-views">
+    <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/@yeger/page-views">
   </a>
 </p>
 
