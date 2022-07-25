@@ -7,6 +7,12 @@
 </p>
 
 <p align="center">
+  <a href="https://railway.app/new/template/ZbP0ks?referralCode=FzqVFW">
+    <img alt="Deploy on Railway" src="https://railway.app/button.svg">
+  </a>
+</p>
+
+<p align="center">
   A privacy-friendly counter for page views.
 </p>
 

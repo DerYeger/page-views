@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    DeployOnRailwayButton: typeof import('./components/DeployOnRailwayButton.vue')['default']
     ViewCounter: typeof import('./components/ViewCounter.vue')['default']
   }
 }
