@@ -776,10 +776,10 @@
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-2.3.3.tgz#fbf80cc039b82ac21a1acb0f0478de8f61fbf600"
   integrity sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==
 
-"@vitest/ui@0.18.0":
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/@vitest/ui/-/ui-0.18.0.tgz#b20ac6617a72f007527df071f6ea99654fb65806"
-  integrity sha512-I0qR8GeqQuLTbW5ljO7O4CKfRajxEbRMZU3+ydXgnzc3HXWO7JUIlDe5gNil4Ru7ffoan4YNZ56hpAwVgGKi1A==
+"@vitest/ui@0.19.0":
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/@vitest/ui/-/ui-0.19.0.tgz#04f6759f07b333eef5ab4a3c960963064463ded3"
+  integrity sha512-enG/K0nO7/2s17wHC8OCAua/zg2HvlW0oDCpNV4T5yuECGlUvbH5FKt6SMROEZtypyJ2hfmXq8H/chUQLABxVA==
   dependencies:
     sirv "^2.0.2"
 
@@ -3384,7 +3384,7 @@ listr2@^4.0.5:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
-local-pkg@^0.4.1:
+local-pkg@^0.4.1, local-pkg@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/local-pkg/-/local-pkg-0.4.2.tgz#13107310b77e74a0e513147a131a2ba288176c2f"
   integrity sha512-mlERgSPrbxU3BP4qBqAvvwlgW4MTg78iwJdGGnv7kibKjWcJksrG3t6LB5lXI93wXRDvG4NpUgJFmTG4T6rdrg==
@@ -5302,15 +5302,15 @@ timsort@~0.3.0:
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha512-qsdtZH+vMoCARQtyod4imc2nIJwg9Cc7lPRrw9CzF8ZKR0khdr8+2nX80PBhET3tcyTtJDxAffGh2rXH4tyU8A==
 
-tinypool@^0.2.1:
+tinypool@^0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/tinypool/-/tinypool-0.2.4.tgz#4d2598c4689d1a2ce267ddf3360a9c6b3925a20c"
   integrity sha512-Vs3rhkUH6Qq1t5bqtb816oT+HeJTXfwt2cbPH17sWHIYKTotQIFPk3tf2fgqRrVyMDVOc1EnPgzIxfIulXVzwQ==
 
-tinyspy@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/tinyspy/-/tinyspy-0.3.3.tgz#8b57f8aec7fe1bf583a3a49cb9ab30c742f69237"
-  integrity sha512-gRiUR8fuhUf0W9lzojPf1N1euJYA30ISebSfgca8z76FOvXtVXqd5ojEIaKLWbDQhAaC3ibxZIjqbyi4ybjcTw==
+tinyspy@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tinyspy/-/tinyspy-1.0.0.tgz#0cb34587287b0432b33fe36a9bd945fe22b1eb89"
+  integrity sha512-FI5B2QdODQYDRjfuLF+OrJ8bjWRMCXokQPcwKm0W3IzcbUmBNv536cQc7eXGoAuXphZwgx1DFbqImwzz08Fnhw==
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -5730,19 +5730,19 @@ vitepress@1.0.0-alpha.4:
     vite "^2.9.7"
     vue "^3.2.33"
 
-vitest@0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.18.0.tgz#a9b59213ee6917e9da0797a2e1d7cb52b8f1b644"
-  integrity sha512-ryAtlh5Gvg3+aLNuOQ8YOHxgQCCu46jx40X5MBL0K0/ejB9i5zsr8fV8LTGXbXex80UMHlzceI9F+ouGaiR+mQ==
+vitest@0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.19.0.tgz#d526bc3ca18b279110de0c2f33004a105bb21059"
+  integrity sha512-nU80Gm95tMchigHpAMukxv1LoWbBGgknX/1MqrXCOoJoJL7/wfq4h2aow61o2jwf5szQrahoNqBqaGb+fYdYrQ==
   dependencies:
     "@types/chai" "^4.3.1"
     "@types/chai-subset" "^1.3.3"
     "@types/node" "*"
     chai "^4.3.6"
     debug "^4.3.4"
-    local-pkg "^0.4.1"
-    tinypool "^0.2.1"
-    tinyspy "^0.3.3"
+    local-pkg "^0.4.2"
+    tinypool "^0.2.4"
+    tinyspy "^1.0.0"
     vite "^2.9.12 || ^3.0.0-0"
 
 vscode-oniguruma@^1.6.1:

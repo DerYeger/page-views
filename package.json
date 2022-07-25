@@ -49,7 +49,7 @@
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
     "@types/node": "16.11.45",
-    "@vitest/ui": "0.18.0",
+    "@vitest/ui": "0.19.0",
     "@yeger/eslint-config": "1.4.32",
     "@yeger/page-views": "link:.",
     "c8": "7.11.3",
@@ -64,13 +64,10 @@
     "vite": "3.0.0",
     "vite-plugin-dts": "1.3.0",
     "vitepress": "1.0.0-alpha.4",
-    "vitest": "0.18.0",
+    "vitest": "0.19.0",
     "vue": "3.2.37"
   },
   "lint-staged": {
     "*.{js,json,md,ts,vue,yaml,yml}": "eslint --fix"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
