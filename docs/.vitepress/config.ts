@@ -2,8 +2,7 @@ import { defineConfig } from 'vitepress'
 
 import Package from '../../package.json'
 
-// TODO
-// const ogImage = `${Package.homepage}/logo.png`
+const ogImage = `${Package.homepage}/og-logo.png`
 
 export default defineConfig({
   // site config
@@ -21,13 +20,13 @@ export default defineConfig({
       },
     ],
     ['meta', { property: 'og:url', content: Package.homepage }],
-    // [
-    //   'meta',
-    //   {
-    //     property: 'og:image',
-    //     content: ogImage,
-    //   },
-    // ],
+    [
+      'meta',
+      {
+        property: 'og:image',
+        content: ogImage,
+      },
+    ],
     ['meta', { name: 'twitter:title', content: Package.name }],
     [
       'meta',
@@ -36,15 +35,23 @@ export default defineConfig({
         content: Package.description,
       },
     ],
-    // [
-    //   'meta',
-    //   {
-    //     name: 'twitter:image',
-    //     content: ogImage,
-    //   },
-    // ],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: ogImage,
+      },
+    ],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    // ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
+    [
+      'link',
+      {
+        rel: 'apple-touch-icon',
+        href: '/og-logo.png',
+        sizes: '1024x2024',
+      },
+    ],
   ],
 
   themeConfig: {
@@ -53,7 +60,7 @@ export default defineConfig({
       text: 'Suggest changes to this page',
     },
 
-    // logo: '/logo.svg',
+    logo: '/logo.svg',
 
     // algolia: {
     // },

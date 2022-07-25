@@ -4,6 +4,9 @@ hero:
   name: '@yeger/page-views'
   text: ''
   tagline: 'A privacy-friendly counter for page views.'
+  image:
+    src: /logo.svg
+    alt: '@yeger/page-views'
   actions:
     - text: Get Started
       link: /guide/

@@ -1,4 +1,8 @@
-<h1 align="center">page-views</h1>
+<h1 align="center">@yeger/page-views</h1>
+
+<p align="center">
+  <img src="docs/public/logo.svg" alt="Logo" width="256px" height="256px">
+</p>
 
 <p align="center">
   <a href="https://page-views.yeger.eu">
