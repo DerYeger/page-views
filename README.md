@@ -6,9 +6,9 @@
   </a>
 </p>
 
-<!-- <p align="center">
-    TODO
-</p> -->
+<p align="center">
+  A privacy-friendly counter for page views.
+</p>
 
 <p align="center">
   <a href="https://github.com/DerYeger/page-views/actions/workflows/ci.yml">

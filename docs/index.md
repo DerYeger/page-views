@@ -3,7 +3,7 @@ layout: home
 hero:
   name: '@yeger/page-views'
   text: ''
-  tagline: ''
+  tagline: 'A privacy-friendly counter for page views.'
   actions:
     - text: Get Started
       link: /guide/
