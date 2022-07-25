@@ -62,6 +62,10 @@ PageViews.autoSubmitViews()
 await PageViews.getViews()
 ```
 
+### Examples
+
+React and Vue examples can be found [here](https://page-views.yeger.eu/examples/).
+
 ## Development
 
 ```bash

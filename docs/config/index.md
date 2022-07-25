@@ -45,4 +45,4 @@ The prefix `eu.yeger.page-views.` is used to prevent key collisions.
 - Type: `boolean`
 - Default: `false`
 
-If this option is set to `true`, `PageViews.autoSubmitViews()` will also submit views if on `popstate` events, i.e., back-navigation.
+If this option is set to `true`, `PageViews.autoSubmitViews()` will also submit views on `popstate` events, i.e., back-navigation.

@@ -1,7 +1,23 @@
 export interface Config {
+  /**
+   * The URL of the backend that will be used for aggregating a view counter.
+   */
   backendUrl: string
+  /**
+   * Called before a page view is submitted.
+   * Can be used to exclude specific pages from being submitted.
+   */
   filter: (page: string) => boolean
+  /**
+   * Decides if clients should throttle submitting repeated views of a page.
+   * If set to `false`, every single view will be submitted.
+   * Otherwise, the value will is used as a timeout (in milliseconds) for submitting a page view again.
+   */
   throttle: false | number
+  /**
+   * If true, will also submit views on `popstate` events, i.e., back-navigation.
+   * Only applies to PageViews.autoSubmitViews().
+   */
   trackPopState: boolean
 }
 
@@ -36,6 +52,11 @@ function getCurrentPage(): string | undefined {
   return page
 }
 
+/**
+ * Submit a view of the current or provided page with the given configuration.
+ * @param config - Optional configuration.
+ * @param page - Optional page override.
+ */
 async function submitView(config: Partial<Config> = {}, page?: string) {
   const resolvedPage = page ?? getCurrentPage()
   if (!resolvedPage) {
@@ -63,6 +84,12 @@ async function submitView(config: Partial<Config> = {}, page?: string) {
   } catch (error) {}
 }
 
+/**
+ * Fetch views of the current or provided page with the given configuration.
+ * @param config - Optional configuration.
+ * @param page - Optional page override.
+ * @returns the views of the page.
+ */
 async function getViews(
   config: Partial<Config> = {},
   page?: string
@@ -82,6 +109,7 @@ let autoSubmitSetup = false
 /**
  * Configure automatic submitting of page views.
  * Note: This modifies the `history.pushState` function.
+ * @param config - Optional configuration.
  */
 function autoSubmitViews(config: Partial<Config> = {}) {
   if (typeof window === 'undefined' || typeof history === 'undefined') {
