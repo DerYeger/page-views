@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/DerYeger/page-views/compare/v1.0.1...v1.1.0) (2022-07-25)
+
+
+### Bug Fixes
+
+* **package:** update module import ([14cec6a](https://github.com/DerYeger/page-views/commit/14cec6ad5b4b1fa19d5489715f04fd9de7c82e3a))
+
+
+### Features
+
+* **package:** implement throttling ([3d9ca19](https://github.com/DerYeger/page-views/commit/3d9ca1921c03a1fb9079cbcea6ed91f1503d2436))
+
 ## [1.0.1](https://github.com/DerYeger/page-views/compare/v1.0.0...v1.0.1) (2022-07-25)
 
 
