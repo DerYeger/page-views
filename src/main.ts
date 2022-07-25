@@ -20,7 +20,10 @@ function mergeWithDefaults(config: Partial<Config>): Config {
   return { ...defaultConfig, ...config }
 }
 
-function getCurrentPage(): string {
+function getCurrentPage(): string | undefined {
+  if (typeof window === 'undefined' || typeof window.location === 'undefined') {
+    return undefined
+  }
   const location = window.location
   const page = `${location.host}${location.pathname}`
 
@@ -31,37 +34,44 @@ function getCurrentPage(): string {
   return page
 }
 
-async function submitView(
-  config: Partial<Config> = {},
-  page = getCurrentPage()
-) {
+async function submitView(config: Partial<Config> = {}, page?: string) {
+  const resolvedPage = page ?? getCurrentPage()
+  if (!resolvedPage) {
+    return
+  }
+
   const { backendUrl, filter, throttle } = mergeWithDefaults(config)
-  if (!filter(page)) {
+  if (!filter(resolvedPage)) {
     return
   }
 
   if (throttle) {
     const now = Date.now()
-    const lastSubmit = localStorage.getItem(getLocalStorageKey(page))
+    const lastSubmit = localStorage.getItem(getLocalStorageKey(resolvedPage))
 
     if (lastSubmit !== null && +lastSubmit + throttle > now) {
       // Last submit is too fresh
       return
     }
 
-    localStorage.setItem(getLocalStorageKey(page), now.toString())
+    localStorage.setItem(getLocalStorageKey(resolvedPage), now.toString())
   }
   try {
-    await fetch(`${backendUrl}/${page}`, { method: 'POST' })
+    await fetch(`${backendUrl}/${resolvedPage}`, { method: 'POST' })
   } catch (error) {}
 }
 
 async function getViews(
   config: Partial<Config> = {},
-  page = getCurrentPage()
+  page?: string
 ): Promise<number> {
+  const resolvedPage = page ?? getCurrentPage()
+  if (!resolvedPage) {
+    return 0
+  }
+
   const { backendUrl } = mergeWithDefaults(config)
-  const res = await fetch(`${backendUrl}/${page}`, { method: 'GET' })
+  const res = await fetch(`${backendUrl}/${resolvedPage}`, { method: 'GET' })
   return +(await res.text())
 }
 
@@ -72,6 +82,10 @@ let autoSubmitSetup = false
  * Note: This modifies the `history.pushState` function.
  */
 function autoSubmitViews(config: Partial<Config> = {}) {
+  if (typeof window === 'undefined' || typeof history === 'undefined') {
+    return
+  }
+
   if (autoSubmitSetup) {
     return
   }
