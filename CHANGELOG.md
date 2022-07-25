@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/DerYeger/page-views/compare/v1.3.0...v1.3.1) (2022-07-25)
+
+
+### Bug Fixes
+
+* **package:** check if `localStorage` is defined ([5273d59](https://github.com/DerYeger/page-views/commit/5273d5970bb3bb9ec86240ad77e26f139be062a3))
+
 # [1.3.0](https://github.com/DerYeger/page-views/compare/v1.2.0...v1.3.0) (2022-07-25)
 
 

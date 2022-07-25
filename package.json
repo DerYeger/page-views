@@ -1,6 +1,6 @@
 {
   "name": "@yeger/page-views",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A privacy-friendly counter for page views.",
   "author": {
     "name": "Jan Müller",
