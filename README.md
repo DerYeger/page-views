@@ -37,6 +37,12 @@
   </a>
 </p>
 
+# Features
+
+- 🕵🏻‍♂️ **Privacy-friendly**: No user-tracking. Clients decide when to submit a page view.
+- 🪶 **Lightweight & Simple**: Less than a kilobyte gzipped. Can be configured to automatically submit views, even after client-side navigation.
+- 💻 **Self-hostable**: By default, a public instance of the backend is used. Alternatively, a self-hosted instance or a custom backend adhering to the scheme can be used.
+
 ## Installation
 
 ```bash
