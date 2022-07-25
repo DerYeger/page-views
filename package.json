@@ -1,0 +1,77 @@
+{
+  "name": "page-views",
+  "version": "0.0.0",
+  "author": {
+    "name": "Jan Müller",
+    "url": "https://github.com/DerYeger"
+  },
+  "license": "MIT",
+  "homepage": "https://page-views.yeger.eu",
+  "repository": "github:DerYeger/page-views",
+  "bugs": {
+    "url": "https://github.com/DerYeger/page-views/issues"
+  },
+  "keywords": [
+    "page",
+    "views",
+    "analytics"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/page-views.umd.js",
+      "import": "./dist/page-views.es.mjs"
+    }
+  },
+  "main": "./dist/page-views.umd.js",
+  "module": "./dist/page-views.es.js",
+  "types": "dist/types/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "is-ci || husky install",
+    "prebuild": "rimraf ./dist",
+    "build": "tsc --noEmit && vite build",
+    "dev": "vite build --watch",
+    "docs": "yarn docs:typecheck && yarn docs:build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress serve docs --port 5173",
+    "docs:typecheck": "tsc --noEmit -p docs",
+    "lint": "eslint \"./**/*.{js,json,md,ts,vue,yaml,yml}\"",
+    "fix": "yarn lint --fix ",
+    "test": "vitest",
+    "test:ci": "rimraf ./coverage && vitest --run --coverage"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
+    "@types/node": "16.11.45",
+    "@vitejs/plugin-vue": "3.0.0",
+    "@vitest/ui": "0.18.0",
+    "@yeger/eslint-config": "1.4.32",
+    "c8": "7.11.3",
+    "eslint": "8.19.0",
+    "husky": "8.0.1",
+    "is-ci": "3.0.1",
+    "jsdom": "20.0.0",
+    "lint-staged": "13.0.3",
+    "page-views": "link:.",
+    "rimraf": "3.0.2",
+    "typescript": "4.7.4",
+    "unocss": "0.44.3",
+    "unplugin-vue-components": "0.21.1",
+    "vite": "3.0.0",
+    "vite-plugin-dts": "1.3.0",
+    "vitepress": "1.0.0-alpha.4",
+    "vitest": "0.18.0",
+    "vue": "3.2.37"
+  },
+  "lint-staged": {
+    "*.{js,json,md,ts,vue,yaml,yml}": "eslint --fix"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
