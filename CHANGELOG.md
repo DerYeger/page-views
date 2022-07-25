@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/DerYeger/page-views/compare/v1.3.1...v1.3.2) (2022-07-25)
+
+
+### Bug Fixes
+
+* **package:** increase default throttle ([ab9cf44](https://github.com/DerYeger/page-views/commit/ab9cf44c79b43a7ee26f69ab9f59d4314295c289))
+
 ## [1.3.1](https://github.com/DerYeger/page-views/compare/v1.3.0...v1.3.1) (2022-07-25)
 
 
