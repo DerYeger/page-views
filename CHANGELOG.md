@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/DerYeger/page-views/compare/v1.2.0...v1.3.0) (2022-07-25)
+
+
+### Features
+
+* **backend:** return 0 views for unknown pages ([7443659](https://github.com/DerYeger/page-views/commit/74436599c4889b42773cbaf14d9b582c4939a11e))
+
 # [1.2.0](https://github.com/DerYeger/page-views/compare/v1.1.0...v1.2.0) (2022-07-25)
 
 
