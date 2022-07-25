@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" data-name="Ebene 1" viewBox="0 0 1024 1024">
   <defs>
-    <linearGradient id="a" x1="447.1" x2="1005.9" y1="156" y2="671.8" gradientUnits="userSpaceOnUse">
-      <stop offset=".1" stop-color="#f28f86"/>
-      <stop offset=".4" stop-color="#f28c82"/>
-      <stop offset=".6" stop-color="#f08277"/>
-      <stop offset=".8" stop-color="#ee7365"/>
-      <stop offset=".9" stop-color="#ed6a5b"/>
+    <linearGradient id="a" x1="447.07" x2="1005.93" y1="155.99" y2="671.76" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#f28f86"/>
+      <stop offset=".38" stop-color="#f28c82"/>
+      <stop offset=".59" stop-color="#f08277"/>
+      <stop offset=".79" stop-color="#ee7365"/>
+      <stop offset=".88" stop-color="#ed6a5b"/>
     </linearGradient>
-    <linearGradient id="b" x1="138.8" x2="850.8" y1="441.2" y2="851.2" gradientUnits="userSpaceOnUse">
-      <stop offset=".1" stop-color="#afdff9"/>
-      <stop offset=".3" stop-color="#add7f3"/>
-      <stop offset=".5" stop-color="#a8c0e4"/>
-      <stop offset=".7" stop-color="#a09bcc"/>
-      <stop offset=".9" stop-color="#9a7eb8"/>
+    <linearGradient id="b" x1="138.77" x2="850.79" y1="441.22" y2="851.18" gradientUnits="userSpaceOnUse">
+      <stop offset=".12" stop-color="#afdff9"/>
+      <stop offset=".25" stop-color="#add7f3"/>
+      <stop offset=".47" stop-color="#a8c0e4"/>
+      <stop offset=".73" stop-color="#a09bcc"/>
+      <stop offset=".91" stop-color="#9a7eb8"/>
     </linearGradient>
   </defs>
-  <path fill="url(#a)" d="M789 759h76a32 32 0 0 0 32-32V297a32 32 0 0 0-32-32H505Z"/>
-  <path fill="url(#b)" d="M454 848H125c-25 0-40-27-28-49l165-287 165-287a32 32 0 0 1 55 0l165 287 164 287c13 22-3 49-28 49Z"/>
+  <path fill="url(#a)" d="M788.53 758.91h76.07a32 32 0 0 0 32-32V297.09a32 32 0 0 0-32-32H505.18Z"/>
+  <path fill="url(#b)" d="M454.31 847.56h-329c-25 0-40.58-27-28.16-48.64L261.77 512l164.79-287.18a32 32 0 0 1 55.51 0L646.86 512l164.63 286.92c12.42 21.65-3.21 48.64-28.16 48.64Z"/>
 </svg>
