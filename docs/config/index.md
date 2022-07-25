@@ -2,7 +2,7 @@
 
 <ViewCounter />
 
-The function [`PageViews.autoSubmitViews()`](/guide/#automatic-submission), [`PageViews.submitView()`](/guide/#manual-submission) and [`PageViews.getViews()`](/guide/#fetching-page-views) receive an optional configuration as their first argument.
+The functions [`PageViews.autoSubmitViews()`](/guide/#automatic-submission), [`PageViews.submitView()`](/guide/#manual-submission) and [`PageViews.getViews()`](/guide/#fetching-page-views) receive an optional configuration as their first argument.
 This configuration will be merged with the default configuration seen below.
 
 <<< @/../src/main.ts#config{0}
@@ -14,7 +14,7 @@ This configuration will be merged with the default configuration seen below.
 
 This is the URL of the backend that will be used for aggregating a view counter.
 
-You may use the provided backend instance, self-host an instance, deplopy an instance on Railway (by clicking the button below) or even use a custom backend that adheres to the schema used.
+You may use the provided backend instance, self-host an instance, deploy an instance on Railway (by clicking the button below) or even use a custom backend that adheres to the schema used.
 
 <DeployOnRailwayButton />
 

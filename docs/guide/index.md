@@ -20,7 +20,7 @@ pnpm add @yeger/page-views
 ### Automatic Submission
 
 `PageViews.autoSubmitViews()` will submit a view of the current page and listen for client-side navigation events to submit those as well.
-Ideally, you should call this method in the entry-point of your application.
+Ideally, you should call this function in the entry-point of your application.
 
 ::: warning
 In order to achieve automatic submitting, the function `history.pushState` will be augmented to fire a custom event `loationchange`.

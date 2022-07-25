@@ -8,8 +8,7 @@ const views = ref<number>()
 PageViews.autoSubmitViews()
 
 onMounted(async () => {
-  const currentViews = await PageViews.getViews()
-  views.value = currentViews
+  views.value = await PageViews.getViews()
 })
 </script>
 
