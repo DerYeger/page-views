@@ -6,5 +6,7 @@ import '@vue/runtime-core'
 export {}
 
 declare module '@vue/runtime-core' {
-  export interface GlobalComponents {}
+  export interface GlobalComponents {
+    ViewCounter: typeof import('./components/ViewCounter.vue')['default']
+  }
 }

@@ -1,0 +1,30 @@
+<script async setup lang="ts">
+import PageViews from '@yeger/page-views'
+import { onMounted, ref } from 'vue'
+
+const views = ref<number>()
+
+PageViews.autoSubmitViews()
+
+onMounted(async () => {
+  const currentViews = await PageViews.getViews()
+  views.value = currentViews
+})
+</script>
+
+<template>
+  <div class="page-views">
+    <span v-if="views === undefined">Loading...</span>
+    <span v-else>{{ views }} views</span>
+  </div>
+</template>
+
+<style scoped>
+.page-views {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+</style>

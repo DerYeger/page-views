@@ -12,3 +12,5 @@ hero:
       link: https://github.com/DerYeger/page-views
       theme: alt
 ---
+
+<ViewCounter />
