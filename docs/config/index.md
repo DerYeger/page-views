@@ -29,7 +29,7 @@ It can be used to exclude specific pages from being submitted.
 ## Throttle
 
 - Type: `number | false`
-- Default: `5 * 60 * 1000`
+- Default: `86400000`
 
 The `throttle` property decides if clients should throttle submitting repeated views of a page.
 If set to `false`, every single view will be submitted.

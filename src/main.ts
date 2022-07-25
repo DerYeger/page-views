@@ -29,7 +29,7 @@ function getLocalStorageKey(page: string) {
 const defaultConfig: Config = {
   backendUrl: 'https://page-views.up.railway.app/api/views',
   filter: () => true,
-  throttle: 5 * 60 * 1000,
+  throttle: 86400000, // == 1 day
   trackPopState: false,
 }
 // #endregion config
