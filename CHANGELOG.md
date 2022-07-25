@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/DerYeger/page-views/compare/v1.3.2...v1.4.0) (2022-07-25)
+
+
+### Features
+
+* **backend:** ignore dev paths ([dc4f439](https://github.com/DerYeger/page-views/commit/dc4f439a0645ed253b7498d16c5fa2fef02e3e22))
+
 ## [1.3.2](https://github.com/DerYeger/page-views/compare/v1.3.1...v1.3.2) (2022-07-25)
 
 
