@@ -55,7 +55,10 @@ func handleGetViews(ctx *gin.Context) {
     return
   }
   views, err := redisClient.Get(ctx, page).Result()
-  if err != nil {
+  if err == redis.Nil {
+    ctx.String(http.StatusOK, "0")
+    return
+  } else if err != nil {
     panic(err)
   }
   ctx.String(http.StatusOK, views)
