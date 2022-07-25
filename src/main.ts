@@ -68,7 +68,7 @@ async function submitView(config: Partial<Config> = {}, page?: string) {
     return
   }
 
-  if (throttle) {
+  if (throttle && typeof localStorage !== 'undefined') {
     const now = Date.now()
     const lastSubmit = localStorage.getItem(getLocalStorageKey(resolvedPage))
 
