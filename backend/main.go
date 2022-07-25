@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"strconv"
+	"strings"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -54,6 +55,7 @@ func handleGetViews(ctx *gin.Context) {
     ctx.AbortWithStatus(http.StatusBadRequest)
     return
   }
+
   views, err := redisClient.Get(ctx, page).Result()
   if err == redis.Nil {
     ctx.String(http.StatusOK, "0")
@@ -61,6 +63,7 @@ func handleGetViews(ctx *gin.Context) {
   } else if err != nil {
     panic(err)
   }
+
   ctx.String(http.StatusOK, views)
 }
 
@@ -70,10 +73,17 @@ func handlePostView(ctx *gin.Context) {
     ctx.AbortWithStatus(http.StatusBadRequest)
     return
   }
+
+  if strings.HasPrefix(page, "localhost") || strings.HasPrefix(page, "0.0.0.0") || strings.HasPrefix(page, "127.0.0.1") {
+    ctx.AbortWithStatus(http.StatusCreated)
+    return
+  }
+
   err = redisClient.Incr(ctx, page).Err()
   if err != nil {
     panic(err)
   }
+
   ctx.Status(http.StatusCreated)
 }
 
