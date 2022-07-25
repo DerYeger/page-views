@@ -17,9 +17,10 @@ pnpm add @yeger/page-views
 
 ## Usage
 
-### Automatic submission
+### Automatic Submission
 
 `PageViews.autoSubmitViews()` will submit a view of the current page and listen for client-side navigation events to submit those as well.
+Ideally, you should call this method in the entry-point of your application.
 
 ::: warning
 In order to achieve automatic submitting, the function `history.pushState` will be augmented to fire a custom event `loationchange`.
@@ -30,22 +31,18 @@ As outlined in [this](https://stackoverflow.com/a/52809105) StackOverflow answer
 It is safe to call `PageViews.autoSubmitViews()` multiple times, as consecutive calls will have no effect.
 :::
 
-### Manual submission
+### Manual Submission
 
 `PageViews.submitView()` can be used to manually submit a view.
 Its main use-case are static pages without client side navigation.
-As such, it should be called in the entry-point of your application.
+As such, it should be called in the entry-point of your pages.
 
-### Fetching page views
+However, [automatic submission](./#automatic-submission) is recommended over manual submission.
+
+### Fetching Page Views
 
 `PageViews.getViews()` will resolve to the views of the current page.
 
-### Examples
+### Custom Pages
 
-#### React
-
-<<< @/guide/samples/ViewCounter.tsx{0}
-
-#### Vue
-
-<<< @/.vitepress/components/ViewCounter.vue#example{0}
+As an optional second argument, both `PageViews.submitView()` and `PageViews.getViews()` can receive a string that will be submitted instead of the current page.

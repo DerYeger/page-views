@@ -9,12 +9,14 @@ function getLocalStorageKey(page: string) {
   return `eu.yeger.page-views.${page}`
 }
 
+// #region config
 const defaultConfig: Config = {
   backendUrl: 'https://page-views.up.railway.app/api/views',
   filter: () => true,
   throttle: 5 * 60 * 1000,
   trackPopState: false,
 }
+// #endregion config
 
 function mergeWithDefaults(config: Partial<Config>): Config {
   return { ...defaultConfig, ...config }
