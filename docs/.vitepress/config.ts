@@ -62,8 +62,11 @@ export default defineConfig({
 
     logo: '/logo.svg',
 
-    // algolia: {
-    // },
+    algolia: {
+      appId: 'D85NOWWAZ1',
+      apiKey: '7d4f53f49af47fab32f3f863cbb6399e',
+      indexName: 'page-views',
+    },
 
     nav: [
       { text: 'Home', link: '/' },
