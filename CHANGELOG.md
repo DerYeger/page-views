@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/DerYeger/page-views/compare/v1.4.4...v1.4.5) (2022-09-02)
+
+
+### Bug Fixes
+
+* **release:** schedule release ([44d8c5e](https://github.com/DerYeger/page-views/commit/44d8c5e80cff127d09d42f5c98dd53d5475dba6e))
+
 ## [1.4.4](https://github.com/DerYeger/page-views/compare/v1.4.3...v1.4.4) (2022-08-25)
 
 
